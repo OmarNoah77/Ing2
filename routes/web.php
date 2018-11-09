@@ -39,6 +39,7 @@ Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>['auth']], f
     Route::resource('antecedentesaccidentestrab', 'antecedentesaccidentestrabController');   
     Route::resource('antecedentesginecoostetricos', 'antecedentesginecoostetricosController');
     Route::resource('antecerevisionsistemas', 'antecerevisionsistemasController');
+    Route::resource('examenosteoarticulares', 'examenosteoarticularesController');
     Route::resource('profesionales', 'ProfesionalesController');  
     Route::resource('examenfisicos', 'examenfisicosController');  
     Route::resource('users', 'UsersController')->middleware('Role:Superadmin|Admin');

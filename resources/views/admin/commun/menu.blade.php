@@ -47,10 +47,10 @@
 
 
     @if (auth()->user()->hasRole('Superadmin|Admin'))
-       <li class="<?php echo ( starts_with($route, ADMIN.'.examenfisicos') ) ? "active" : '' ?>">
-                <a href="{{ route(ADMIN.'.examenfisicos.index') }}">
+       <li class="<?php echo ( starts_with($route, ADMIN.'.examenosteoarticulares') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.examenosteoarticulares.index') }}">
                 <i class="fa fa-users"></i>
-                 <span> EXAMEN FISICO</span>
+                 <span> Examen Osteoarticulares</span>
                 </a>
        </li>
     @endif
