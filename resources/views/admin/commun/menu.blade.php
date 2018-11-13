@@ -47,10 +47,10 @@
 
 
     @if (auth()->user()->hasRole('Superadmin|Admin'))
-       <li class="<?php echo ( starts_with($route, ADMIN.'.examenosteoarticulares') ) ? "active" : '' ?>">
-                <a href="{{ route(ADMIN.'.examenosteoarticulares.index') }}">
+       <li class="<?php echo ( starts_with($route, ADMIN.'.hist_concepto_ing_rets') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.hist_concepto_ing_rets.index') }}">
                 <i class="fa fa-users"></i>
-                 <span> Examen Osteoarticulares</span>
+                 <span> Historia Concepto Ingreso/Retiro</span>
                 </a>
        </li>
     @endif
@@ -121,7 +121,7 @@
               <li class="<?php echo ( starts_with($route, ADMIN.'.antecedentesaccidentesenfermes') ) ? "active" : '' ?>">
                 <a href="{{ route(ADMIN.'.antecedentesaccidentesenfermes.index') }}">
                 <i class="fa fa-users"></i>
-                 <span>ACCIDENTES Y/O ENFERMEDAD LABORAL</span>
+                 <span>Accidentes y/o enfermedad Laboral</span>
                 </a>
              </li>
              <li class="<?php echo ( starts_with($route, ADMIN.'.anteceexposionriegos') ) ? "active" : '' ?>">
@@ -133,16 +133,52 @@
              <li class="<?php echo ( starts_with($route, ADMIN.'.antecerevisionsistemas') ) ? "active" : '' ?>">
                 <a href="{{ route(ADMIN.'.antecerevisionsistemas.index') }}">
                 <i class="fa fa-users"></i>
-                 <span> REVISIÓN DE SISTEMAS</span>
+                 <span> Revisión de sistemas</span>
                </a>
              </li>
 
              <li class="<?php echo ( starts_with($route, ADMIN.'.examenfisicos') ) ? "active" : '' ?>">
                 <a href="{{ route(ADMIN.'.examenfisicos.index') }}">
                 <i class="fa fa-users"></i>
-                 <span> EXAMEN FISICO</span>
+                 <span> Examen Fisico</span>
               </a>
              </li>
+              <li class="<?php echo ( starts_with($route, ADMIN.'.examenosteoarticulares') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.examenosteoarticulares.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Examen Osteoarticulares</span>
+                </a>
+            </li>
+             <li class="<?php echo ( starts_with($route, ADMIN.'.examencolumnas') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.examencolumnas.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Examen Columna</span>
+            </a>
+            </li>
+            <li class="<?php echo ( starts_with($route, ADMIN.'.examenvisuales') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.examenvisuales.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Examen Visual</span>
+                </a>
+            </li>
+             <li class="<?php echo ( starts_with($route, ADMIN.'.inmunizaciones') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.inmunizaciones.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Inmunizaciones</span>
+                </a>
+            </li>
+             <li class="<?php echo ( starts_with($route, ADMIN.'.hist_diagnosticos') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.hist_diagnosticos.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Diagnosticos CIE</span>
+                </a>
+            </li>
+             <li class="<?php echo ( starts_with($route, ADMIN.'.hist_concepto_ing_rets') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.hist_concepto_ing_rets.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Historia Concepto Ingreso/Retiro</span>
+                </a>
+            </li>
         </ul>
     </li>
   

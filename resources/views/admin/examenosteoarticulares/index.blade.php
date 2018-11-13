@@ -153,6 +153,9 @@
                     <th>LIMITACION cadera I</th>
                     <th>LIMITACION tobillos D</th>
                     <th>LIMITACION tobillos I</th>  
+                    <th>funcion_motora_espontanea</th>  
+                    <th>funcion_motora_conservada</th>  
+                    <th>observaciones</th>  
 
                 </tr>
             </thead>
@@ -167,130 +170,135 @@
       					@foreach ($items as $item)
       						<tr>
                       <td><a>{{ $item->idcita }}</a></td>
-                      <td><a>{{ $item->dedosmano_D_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->dedosmano_I_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->dedospies_D_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->dedospies_I_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->munecas_D_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->munecas_I_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->codos_D_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->codos_I_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->nombros_D_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->nombros_I_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->rodillas_D_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->rodillas_I_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->cadera_D_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->cadera_I_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->tobillos_D_DEFORMIDAD }}</a></td>
-                      <td><a>{{ $item->tobillos_I_DEFORMIDAD }}</a></td>
+                      <td><a>{{ $item->dedosmano_d_deformidad }}</a></td>
+                      <td><a>{{ $item->dedosmano_i_deformidad }}</a></td>
+                      <td><a>{{ $item->dedospies_d_deformidad }}</a></td>
+                      <td><a>{{ $item->dedospies_i_deformidad }}</a></td>
+                      <td><a>{{ $item->munecas_d_deformidad }}</a></td>
+                      <td><a>{{ $item->munecas_i_deformidad }}</a></td>
+                      <td><a>{{ $item->codos_d_deformidad }}</a></td>
+                      <td><a>{{ $item->codos_i_deformidad }}</a></td>
+                      <td><a>{{ $item->nombros_d_deformidad }}</a></td>
+                      <td><a>{{ $item->nombros_i_deformidad }}</a></td>
+                      <td><a>{{ $item->rodillas_d_deformidad }}</a></td>
+                      <td><a>{{ $item->rodillas_i_deformidad }}</a></td>
+                      <td><a>{{ $item->cadera_d_deformidad }}</a></td>
+                      <td><a>{{ $item->cadera_i_deformidad }}</a></td>
+                      <td><a>{{ $item->tobillos_d_deformidad }}</a></td>
+                      <td><a>{{ $item->tobillos_i_deformidad }}</a></td>
 
 
-                      <td><a>{{ $item->dedosmano_D_RUBOR }}</a></td>
-                      <td><a>{{ $item->dedosmano_I_RUBOR }}</a></td>
-                      <td><a>{{ $item->dedospies_D_RUBOR }}</a></td>
-                      <td><a>{{ $item->dedospies_I_RUBOR }}</a></td>
-                      <td><a>{{ $item->munecas_D_RUBOR }}</a></td>
-                      <td><a>{{ $item->munecas_I_RUBOR }}</a></td>
-                      <td><a>{{ $item->codos_D_RUBOR }}</a></td>
-                      <td><a>{{ $item->codos_I_RUBOR }}</a></td>
-                      <td><a>{{ $item->nombros_D_RUBOR }}</a></td>
-                      <td><a>{{ $item->nombros_I_RUBOR }}</a></td>
-                      <td><a>{{ $item->rodillas_D_RUBOR }}</a></td>
-                      <td><a>{{ $item->rodillas_I_RUBOR }}</a></td>
-                      <td><a>{{ $item->cadera_D_RUBOR }}</a></td>
-                      <td><a>{{ $item->cadera_I_RUBOR }}</a></td>
-                      <td><a>{{ $item->tobillos_D_RUBOR }}</a></td>
-                      <td><a>{{ $item->tobillos_I_RUBOR }}</a></td>
+                      <td><a>{{ $item->dedosmano_d_rubor }}</a></td>
+                      <td><a>{{ $item->dedosmano_i_rubor }}</a></td>
+                      <td><a>{{ $item->dedospies_d_rubor }}</a></td>
+                      <td><a>{{ $item->dedospies_i_rubor }}</a></td>
+                      <td><a>{{ $item->munecas_d_rubor }}</a></td>
+                      <td><a>{{ $item->munecas_i_rubor }}</a></td>
+                      <td><a>{{ $item->codos_d_rubor }}</a></td>
+                      <td><a>{{ $item->codos_i_rubor }}</a></td>
+                      <td><a>{{ $item->nombros_d_rubor }}</a></td>
+                      <td><a>{{ $item->nombros_i_rubor }}</a></td>
+                      <td><a>{{ $item->rodillas_d_rubor }}</a></td>
+                      <td><a>{{ $item->rodillas_i_rubor }}</a></td>
+                      <td><a>{{ $item->cadera_d_rubor }}</a></td>
+                      <td><a>{{ $item->cadera_i_rubor }}</a></td>
+                      <td><a>{{ $item->tobillos_d_rubor }}</a></td>
+                      <td><a>{{ $item->tobillos_i_rubor }}</a></td>
 
 
-                      <td><a>{{ $item->dedosmano_D_COLOR }}</a></td>
-                      <td><a>{{ $item->dedosmano_I_COLOR }}</a></td>
-                      <td><a>{{ $item->dedospies_D_COLOR }}</a></td>
-                      <td><a>{{ $item->dedospies_I_COLOR }}</a></td>
-                      <td><a>{{ $item->munecas_D_COLOR }}</a></td>
-                      <td><a>{{ $item->munecas_I_COLOR }}</a></td>
-                      <td><a>{{ $item->codos_D_COLOR }}</a></td>
-                      <td><a>{{ $item->codos_I_COLOR }}</a></td>
-                      <td><a>{{ $item->nombros_D_COLOR }}</a></td>
-                      <td><a>{{ $item->nombros_I_COLOR }}</a></td>
-                      <td><a>{{ $item->rodillas_D_COLOR }}</a></td>
-                      <td><a>{{ $item->rodillas_I_COLOR }}</a></td>
-                      <td><a>{{ $item->cadera_D_COLOR }}</a></td>
-                      <td><a>{{ $item->cadera_I_COLOR }}</a></td>
-                      <td><a>{{ $item->tobillos_D_COLOR }}</a></td>
-                      <td><a>{{ $item->tobillos_I_COLOR }}</a></td>
+                      <td><a>{{ $item->dedosmano_d_color }}</a></td>
+                      <td><a>{{ $item->dedosmano_i_color }}</a></td>
+                      <td><a>{{ $item->dedospies_d_color }}</a></td>
+                      <td><a>{{ $item->dedospies_i_color }}</a></td>
+                      <td><a>{{ $item->munecas_d_color }}</a></td>
+                      <td><a>{{ $item->munecas_i_color }}</a></td>
+                      <td><a>{{ $item->codos_d_color }}</a></td>
+                      <td><a>{{ $item->codos_i_color }}</a></td>
+                      <td><a>{{ $item->nombros_d_color }}</a></td>
+                      <td><a>{{ $item->nombros_i_color }}</a></td>
+                      <td><a>{{ $item->rodillas_d_color }}</a></td>
+                      <td><a>{{ $item->rodillas_i_color }}</a></td>
+                      <td><a>{{ $item->cadera_d_color }}</a></td>
+                      <td><a>{{ $item->cadera_i_color }}</a></td>
+                      <td><a>{{ $item->tobillos_d_color }}</a></td>
+                      <td><a>{{ $item->tobillos_i_color }}</a></td>
 
 
-                      <td><a>{{ $item->dedosmano_D_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->dedosmano_I_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->dedospies_D_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->dedospies_I_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->munecas_D_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->munecas_I_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->codos_D_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->codos_I_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->nombros_D_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->nombros_I_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->rodillas_D_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->rodillas_I_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->cadera_D_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->cadera_I_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->tobillos_D_SENSIBILIDAD }}</a></td>
-                      <td><a>{{ $item->tobillos_I_SENSIBILIDAD }}</a></td>
+                      <td><a>{{ $item->dedosmano_d_sensibilidad }}</a></td>
+                      <td><a>{{ $item->dedosmano_i_sensibilidad }}</a></td>
+                      <td><a>{{ $item->dedospies_d_sensibilidad }}</a></td>
+                      <td><a>{{ $item->dedospies_i_sensibilidad }}</a></td>
+                      <td><a>{{ $item->munecas_d_sensibilidad }}</a></td>
+                      <td><a>{{ $item->munecas_i_sensibilidad }}</a></td>
+                      <td><a>{{ $item->codos_d_sensibilidad }}</a></td>
+                      <td><a>{{ $item->codos_i_sensibilidad }}</a></td>
+                      <td><a>{{ $item->nombros_d_sensibilidad }}</a></td>
+                      <td><a>{{ $item->nombros_i_sensibilidad }}</a></td>
+                      <td><a>{{ $item->rodillas_d_sensibilidad }}</a></td>
+                      <td><a>{{ $item->rodillas_i_sensibilidad }}</a></td>
+                      <td><a>{{ $item->cadera_d_sensibilidad }}</a></td>
+                      <td><a>{{ $item->cadera_i_sensibilidad }}</a></td>
+                      <td><a>{{ $item->tobillos_d_sensibilidad }}</a></td>
+                      <td><a>{{ $item->tobillos_i_sensibilidad }}</a></td>
 
 
-                      <td><a>{{ $item->dedosmano_D_EDEMA }}</a></td>
-                      <td><a>{{ $item->dedosmano_I_EDEMA }}</a></td>
-                      <td><a>{{ $item->dedospies_D_EDEMA }}</a></td>
-                      <td><a>{{ $item->dedospies_I_EDEMA }}</a></td>
-                      <td><a>{{ $item->munecas_D_EDEMA }}</a></td>
-                      <td><a>{{ $item->munecas_I_EDEMA }}</a></td>
-                      <td><a>{{ $item->codos_D_EDEMA }}</a></td>
-                      <td><a>{{ $item->codos_I_EDEMA }}</a></td>
-                      <td><a>{{ $item->nombros_D_EDEMA }}</a></td>
-                      <td><a>{{ $item->nombros_I_EDEMA }}</a></td>
-                      <td><a>{{ $item->rodillas_D_EDEMA }}</a></td>
-                      <td><a>{{ $item->rodillas_I_EDEMA }}</a></td>
-                      <td><a>{{ $item->cadera_D_EDEMA }}</a></td>
-                      <td><a>{{ $item->cadera_I_EDEMA }}</a></td>
-                      <td><a>{{ $item->tobillos_D_EDEMA }}</a></td>
-                      <td><a>{{ $item->tobillos_I_EDEMA }}</a></td>
+                      <td><a>{{ $item->dedosmano_d_edema }}</a></td>
+                      <td><a>{{ $item->dedosmano_i_edema }}</a></td>
+                      <td><a>{{ $item->dedospies_d_edema }}</a></td>
+                      <td><a>{{ $item->dedospies_i_edema }}</a></td>
+                      <td><a>{{ $item->munecas_d_edema }}</a></td>
+                      <td><a>{{ $item->munecas_i_edema }}</a></td>
+                      <td><a>{{ $item->codos_d_edema }}</a></td>
+                      <td><a>{{ $item->codos_i_edema }}</a></td>
+                      <td><a>{{ $item->nombros_d_edema }}</a></td>
+                      <td><a>{{ $item->nombros_i_edema }}</a></td>
+                      <td><a>{{ $item->rodillas_d_edema }}</a></td>
+                      <td><a>{{ $item->rodillas_i_edema }}</a></td>
+                      <td><a>{{ $item->cadera_d_edema }}</a></td>
+                      <td><a>{{ $item->cadera_i_edema }}</a></td>
+                      <td><a>{{ $item->tobillos_d_edema }}</a></td>
+                      <td><a>{{ $item->tobillos_i_edema }}</a></td>
 
 
-                      <td><a>{{ $item->dedosmano_D_DOLOR }}</a></td>
-                      <td><a>{{ $item->dedosmano_I_DOLOR }}</a></td>
-                      <td><a>{{ $item->dedospies_D_DOLOR }}</a></td>
-                      <td><a>{{ $item->dedospies_I_DOLOR }}</a></td>
-                      <td><a>{{ $item->munecas_D_DOLOR }}</a></td>
-                      <td><a>{{ $item->munecas_I_DOLOR }}</a></td>
-                      <td><a>{{ $item->codos_D_DOLOR }}</a></td>
-                      <td><a>{{ $item->codos_I_DOLOR }}</a></td>
-                      <td><a>{{ $item->nombros_D_DOLOR }}</a></td>
-                      <td><a>{{ $item->nombros_I_DOLOR }}</a></td>
-                      <td><a>{{ $item->rodillas_D_DOLOR }}</a></td>
-                      <td><a>{{ $item->rodillas_I_DOLOR }}</a></td>
-                      <td><a>{{ $item->cadera_D_DOLOR }}</a></td>
-                      <td><a>{{ $item->cadera_I_DOLOR }}</a></td>
-                      <td><a>{{ $item->tobillos_D_DOLOR }}</a></td>
-                      <td><a>{{ $item->tobillos_I_DOLOR }}</a></td>
+                      <td><a>{{ $item->dedosmano_d_dolor }}</a></td>
+                      <td><a>{{ $item->dedosmano_i_dolor }}</a></td>
+                      <td><a>{{ $item->dedospies_d_dolor }}</a></td>
+                      <td><a>{{ $item->dedospies_i_dolor }}</a></td>
+                      <td><a>{{ $item->munecas_d_dolor }}</a></td>
+                      <td><a>{{ $item->munecas_i_dolor }}</a></td>
+                      <td><a>{{ $item->codos_d_dolor }}</a></td>
+                      <td><a>{{ $item->codos_i_dolor }}</a></td>
+                      <td><a>{{ $item->nombros_d_dolor }}</a></td>
+                      <td><a>{{ $item->nombros_i_dolor }}</a></td>
+                      <td><a>{{ $item->rodillas_d_dolor }}</a></td>
+                      <td><a>{{ $item->rodillas_i_dolor }}</a></td>
+                      <td><a>{{ $item->cadera_d_dolor }}</a></td>
+                      <td><a>{{ $item->cadera_i_dolor }}</a></td>
+                      <td><a>{{ $item->tobillos_d_dolor }}</a></td>
+                      <td><a>{{ $item->tobillos_i_dolor }}</a></td>
 
 
-                      <td><a>{{ $item->dedosmano_D_LIMITACION }}</a></td>
-                      <td><a>{{ $item->dedosmano_I_LIMITACION }}</a></td>
-                      <td><a>{{ $item->dedospies_D_LIMITACION }}</a></td>
-                      <td><a>{{ $item->dedospies_I_LIMITACION }}</a></td>
-                      <td><a>{{ $item->munecas_D_LIMITACION }}</a></td>
-                      <td><a>{{ $item->munecas_I_LIMITACION }}</a></td>
-                      <td><a>{{ $item->codos_D_LIMITACION }}</a></td>
-                      <td><a>{{ $item->codos_I_LIMITACION }}</a></td>
-                      <td><a>{{ $item->nombros_D_LIMITACION }}</a></td>
-                      <td><a>{{ $item->nombros_I_LIMITACION }}</a></td>
-                      <td><a>{{ $item->rodillas_D_LIMITACION }}</a></td>
-                      <td><a>{{ $item->rodillas_I_LIMITACION }}</a></td>
-                      <td><a>{{ $item->cadera_D_LIMITACION }}</a></td>
-                      <td><a>{{ $item->cadera_I_LIMITACION }}</a></td>
-                      <td><a>{{ $item->tobillos_D_LIMITACION }}</a></td>
-                      <td><a>{{ $item->tobillos_I_LIMITACION }}</a></td>
+                      <td><a>{{ $item->dedosmano_d_limitacion }}</a></td>
+                      <td><a>{{ $item->dedosmano_i_limitacion }}</a></td>
+                      <td><a>{{ $item->dedospies_d_limitacion }}</a></td>
+                      <td><a>{{ $item->dedospies_i_limitacion }}</a></td>
+                      <td><a>{{ $item->munecas_d_limitacion }}</a></td>
+                      <td><a>{{ $item->munecas_i_limitacion }}</a></td>
+                      <td><a>{{ $item->codos_d_limitacion }}</a></td>
+                      <td><a>{{ $item->codos_i_limitacion }}</a></td>
+                      <td><a>{{ $item->nombros_d_limitacion }}</a></td>
+                      <td><a>{{ $item->nombros_i_limitacion }}</a></td>
+                      <td><a>{{ $item->rodillas_d_limitacion }}</a></td>
+                      <td><a>{{ $item->rodillas_i_limitacion }}</a></td>
+                      <td><a>{{ $item->cadera_d_limitacion }}</a></td>
+                      <td><a>{{ $item->cadera_i_limitacion }}</a></td>
+                      <td><a>{{ $item->tobillos_d_limitacion }}</a></td>
+                      <td><a>{{ $item->tobillos_i_limitacion }}</a></td>
+                      <td><a>{{ $item->funcion_motora_espontanea }}</a></td>
+                      <td><a>{{ $item->funcion_motora_conservada }}</a></td>
+                      <td><a>{{ $item->observaciones }}</a></td>
+
+                      
 
 
                         <!-- <td>
