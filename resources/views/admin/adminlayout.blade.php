@@ -41,6 +41,28 @@
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
+                        
+                        <!-- Subir Excel -->
+
+                        <ul class="nav navbar-nav">
+                          <li class="active"><a href="{{ route(ADMIN.'.subirexceladmisiones.index') }}">Subir Excel Admisiones <span class="sr-only">(current)</span></a></li>
+                          <!--<li><a href="#">TEST</a></li>
+                           <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">TEST <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">TEST</a></li>
+                              <li><a href="#">Another TEST</a></li>
+                              <li><a href="#">Something TEST here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated TEST</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">One more separated TEST</a></li>
+                            </ul>
+                          </li> -->
+                        </ul>
+
+
+
 
                         <!-- User Account Menu -->
                         <li class="dropdown user user-menu">

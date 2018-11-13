@@ -41,7 +41,10 @@ Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>['auth']], f
     Route::resource('antecerevisionsistemas', 'antecerevisionsistemasController');
     Route::resource('examenosteoarticulares', 'examenosteoarticularesController');
     Route::resource('profesionales', 'ProfesionalesController');  
-    Route::resource('examenfisicos', 'examenfisicosController');  
+    Route::resource('examenfisicos', 'examenfisicosController');
+    Route::resource('admisiones', 'admisionesController');
+    Route::resource('subirexceladmisiones', 'importadmisionesController'); 
+    Route::post('importexceladmisiones', 'importadmisionesController@importexceladmisiones')->name('ruta.import.excadmin');  
     Route::resource('users', 'UsersController')->middleware('Role:Superadmin|Admin');
     Route::get('profileedit/{id}', 'ProfileController@edit');
     Route::put('profileupdate/{id}', 'ProfileController@update');

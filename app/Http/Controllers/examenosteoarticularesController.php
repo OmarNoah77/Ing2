@@ -16,7 +16,7 @@ class examenosteoarticularesController extends Controller
      */
     public function index()
     {
-        $items = examenosteoarticulares::with('parent')->get();
+        $items = examenosteoarticulares::with('parentExamen')->get();
 
         return view('admin.examenosteoarticulares.index', compact('items'));
     }
