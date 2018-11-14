@@ -50,33 +50,16 @@
                     <th>Telefono 2</th>
                     <th>Usuario Sistema</th>
                     <th>Empresa</th>
+                    <th>Escolaridad</th>
+                    <th>Ocupacion</th>
+                    <th>Cargo</th>
+                    <th>funciones</th>
+                    <th>LGTBI</th>
                     <th class="no-sort"></th>
                 </tr>
             </thead>
             <tfoot>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th class="actions"></th>
-                </tr>
+              
             </tfoot>
             <tbody>
       					@foreach ($items as $item)
@@ -101,6 +84,12 @@
                       <td><a>{{ $item->telefono2 }}</a></td>
                       <td><a>{{ $item->usuario_sistema }}</a></td>
                       <td><a>{{ $item->idempresa }}</a></td>
+                      <td><a>{{ $item->Escolaridad }}</a></td>
+                      <td><a>{{ $item->Ocupacion }}</a></td>
+                      <td><a>{{ $item->Cargo }}</a></td>
+                      <td><a>{{ $item->funciones }}</a></td>
+                      <td><a>{{ $item->LGTBI }}</a></td>
+
 
                       <td class="actions">
                             <ul class="list-inline" style="margin-bottom:0px;">

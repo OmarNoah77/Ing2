@@ -46,17 +46,7 @@
     @endif
 
 
-    @if (auth()->user()->hasRole('Superadmin|Admin'))
-       <li class="<?php echo ( starts_with($route, ADMIN.'.hist_concepto_ing_rets') ) ? "active" : '' ?>">
-                <a href="{{ route(ADMIN.'.hist_concepto_ing_rets.index') }}">
-                <i class="fa fa-users"></i>
-                 <span> Historia Concepto Ingreso/Retiro</span>
-                </a>
-       </li>
-    @endif
-
-
-    @if (auth()->user()->hasRole('Superadmin|Admin'))
+     @if (auth()->user()->hasRole('Superadmin|Admin'))
 
     <li class="treeview">
         <a href="#"><i class='fa fa-link'></i> <span>Información trabajador</span> <i class="fa fa-angle-left pull-right"></i></a>
@@ -66,14 +56,7 @@
                  <i class="fa fa-users"></i>
                     <span>Trabajador</span>
                  </a>
-            </li>
-                <li class="<?php echo ( starts_with($route, ADMIN.'.clientes') ) ? "active" : '' ?>">
-                <a href="{{ route(ADMIN.'.clientes.index') }}">
-                <i class="fa fa-users"></i>
-                 <span>Seguridad Social Trabajador</span>
-             </a>
-           </li>
-            </li>
+             </li>
                 <li class="<?php echo ( starts_with($route, ADMIN.'.antecedenteshabitos') ) ? "active" : '' ?>">
                 <a href="{{ route(ADMIN.'.antecedenteshabitos.index') }}">
                 <i class="fa fa-users"></i>
@@ -87,18 +70,7 @@
                  <span>Antecedentes Clinicos Personales</span>
                 </a>
            </li>
-           <li class="<?php echo ( starts_with($route, ADMIN.'.clientes') ) ? "active" : '' ?>">
-              <a href="{{ route(ADMIN.'.clientes.index') }}">
-              <i class="fa fa-users"></i>
-              <span>Responsable Trabajador</span>
-              </a>
-           </li>
-           <li class="<?php echo ( starts_with($route, ADMIN.'.clientes') ) ? "active" : '' ?>">
-                <a href="{{ route(ADMIN.'.clientes.index') }}">
-               <i class="fa fa-users"></i>
-               <span>Elementos protección</span>
-               </a>
-           </li>
+         
             <li class="<?php echo ( starts_with($route, ADMIN.'.antecedenteslaborareles') ) ? "active" : '' ?>">
               <a href="{{ route(ADMIN.'.antecedenteslaborareles.index') }}">
               <i class="fa fa-users"></i>
@@ -161,6 +133,14 @@
                  <span> Examen Visual</span>
                 </a>
             </li>
+            <li class="<?php echo ( starts_with($route, ADMIN.'.examenlaboratorioresultados') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.examenlaboratorioresultados.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Examen laboratorio resultados</span>
+                </a>
+            </li>
+
+
              <li class="<?php echo ( starts_with($route, ADMIN.'.inmunizaciones') ) ? "active" : '' ?>">
                 <a href="{{ route(ADMIN.'.inmunizaciones.index') }}">
                 <i class="fa fa-users"></i>
@@ -173,10 +153,28 @@
                  <span> Diagnosticos CIE</span>
                 </a>
             </li>
+             <li class="<?php echo ( starts_with($route, ADMIN.'.hist_recomendaciones') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.hist_recomendaciones.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Historia Recomendaciones</span>
+                </a>
+            </li>
              <li class="<?php echo ( starts_with($route, ADMIN.'.hist_concepto_ing_rets') ) ? "active" : '' ?>">
                 <a href="{{ route(ADMIN.'.hist_concepto_ing_rets.index') }}">
                 <i class="fa fa-users"></i>
                  <span> Historia Concepto Ingreso/Retiro</span>
+                </a>
+            </li>
+            <li class="<?php echo ( starts_with($route, ADMIN.'.hist_medico_periodicos') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.hist_medico_periodicos.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Historia Concepto Medico Periodicos</span>
+                </a>
+            </li>
+            <li class="<?php echo ( starts_with($route, ADMIN.'.hist_medico_retiros') ) ? "active" : '' ?>">
+                <a href="{{ route(ADMIN.'.hist_medico_retiros.index') }}">
+                <i class="fa fa-users"></i>
+                 <span> Historia Concepto Medico Retiro</span>
                 </a>
             </li>
         </ul>

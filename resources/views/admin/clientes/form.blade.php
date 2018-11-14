@@ -19,4 +19,9 @@
 {!! Form::myInput('text', 'telefono2', 'Telefono 2: ', ['required','min'=>'9999999','max'=>'3600000000']) !!}
 {!! Form::myInput('text', 'usuario_sistema', 'Usuario sistema: ', ['required']) !!}
 {!! Form::myInput('numeric', 'id_empresa', 'Id empresa: ', ['required']) !!}
+{!! Form::myInput('numeric', 'Escolaridad', 'Escolaridad: ', ['required']) !!}
+{!! Form::myInput('numeric', 'Ocupacion', 'Ocupacion: ', ['required']) !!}
+{!! Form::myInput('numeric', 'Cargo', 'Cargo: ', ['required']) !!}
+{!! Form::myInput('numeric', 'funciones', 'funciones: ', ['required']) !!}
+{!! Form::mySelect( 'LGTBI', 'LGTBI: ', config('variables.SINO')) !!}
 
