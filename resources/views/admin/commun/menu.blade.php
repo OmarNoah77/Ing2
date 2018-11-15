@@ -27,6 +27,16 @@
     </li>
     @endif
 
+
+    @if (auth()->user()->hasRole('Superadmin|Admin'))
+    <li class="<?php echo ( starts_with($route, ADMIN.'.admisiones') ) ? "active" : '' ?>">
+        <a href="{{ route(ADMIN.'.admisiones.index') }}">
+            <i class="fa fa-users"></i>
+            <span>Admisiones</span>
+        </a>
+    </li>
+    @endif
+
     @if (auth()->user()->hasRole('Superadmin|Admin'))
     <li class="<?php echo ( starts_with($route, ADMIN.'.entidades') ) ? "active" : '' ?>">
         <a href="{{ route(ADMIN.'.entidades.index') }}">

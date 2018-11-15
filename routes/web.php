@@ -20,11 +20,11 @@ Route::group(['prefix' => ADMIN, 'as' => ADMIN . '.', 'middleware'=>['auth']], f
     Route::resource('categories', 'CategoriesController');
     Route::resource('empresas', 'EmpresasController');
     Route::resource('clientes', 'ClientesController');
-    Route::resource('divipola', 'divipolaController');
     Route::resource('habitos', 'habitosController');
     Route::resource('ocupaciones', 'ocupacionesController');
     Route::resource('especialidades', 'especialidadesController');
     Route::resource('tipoexamenes', 'tipoexamenesController');
+    Route::resource('divipola', 'divipolaController');
     Route::resource('expuestoas', 'expuestoasController');
     Route::resource('tiposervicios', 'tiposerviciosController');    
     Route::resource('examenenfasis', 'examenenfasisController'); 

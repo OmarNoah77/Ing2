@@ -7,8 +7,8 @@
 {!! Form::myInput('text', 'segundoapellido', 'Segundo Apellido: ', ['required']) !!}
 {!! Form::myInput('text', 'primernombre', 'Primer Nombre: ', ['required']) !!}
 {!! Form::myInput('text', 'segundonombre', 'Segundo Nombre: ', ['required']) !!}
-{!! Form::myInput('date', 'Fechacita', 'Fecha cita: ', ['required']) !!}
-{!! Form::myInput('time', 'Horacita', 'Hora Cita: ', ['required']) !!}
+{!! Form::myInput('date', 'fechacita', 'Fecha cita: ', ['required']) !!}
+{!! Form::myInput('time', 'horacita', 'Hora Cita: ', ['required']) !!}
 {!! Form::myInput('number', 'tiposervicio', 'Tipo servicio: ', ['required']) !!}
 {!! Form::myInput('number', 'examen', 'Examen: ', ['required']) !!}
 {!! Form::myInput('number', 'enfasis', 'Enfasis: ', ['required']) !!}

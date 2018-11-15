@@ -81,8 +81,8 @@
                       <td><a>{{ $item->segundoapellido }}</a></td>
                       <td><a>{{ $item->primernombre }}</a></td>
                       <td><a>{{ $item->segundonombre }}</a></td>
-                      <td><a>{{ $item->Fechacita }}</a></td>
-                      <td><a>{{ $item->Horacita }}</a></td>
+                      <td><a>{{ $item->fechacita }}</a></td>
+                      <td><a>{{ $item->horacita }}</a></td>
                       <td><a>{{ $item->tiposervicio }}</a></td>
                       <td><a>{{ $item->examen }}</a></td>
                       <td><a>{{ $item->enfasis }}</a></td>
