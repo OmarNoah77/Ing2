@@ -7,3 +7,5 @@ Homestead.yaml
 .env
 .DS_Store
 /nbproject/private/
+/vendor
+/vendor2
